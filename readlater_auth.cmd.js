@@ -14,6 +14,15 @@ CmdUtils.CreateCommand({
 		pblock.innerHTML = "<strong>Username:</strong>" + username + "<br/><strong>Password:</strong> " + password;
 	},
 	execute: function(input) {
+		var array = input.text.split(":");
+		var username = array[0];
+		var password = array[1];
 		
+		CmdUtils.savePassword({
+			name: "extensions.ubiquity.readitlater",
+			username: username,
+			password: password
+		});
+		displayMessage("Saved your Read It Later login information.");
 	}
 })
