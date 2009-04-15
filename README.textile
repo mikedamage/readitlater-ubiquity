@@ -1,0 +1,17 @@
+h1. Read it Later for Ubiquity
+
+_Interacts with the "Read It Later":http://www.readitlaterlist.com Web Service_
+
+|*By:*||Mike Green "mike.is.green@gmail.com":mailto:mike.is.green@gmail.com|
+|*License:*||MIT License|
+
+h2. About
+
+These are a set of commands for Mozilla Ubiquity that interact with Read It Later's simple API to let you post new pages to you Read It Later list. That's it.
+
+h2. Commands
+
+* readlater.auth _username_:_password_
+** Saves your username and password to Firefox's preferences
+* readlater
+** Add current page to your Read It Later list.
